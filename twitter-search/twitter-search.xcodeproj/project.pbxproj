@@ -12,6 +12,9 @@
 		6F06C3BF1C8BEA57007300EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F06C3BD1C8BEA57007300EE /* MainMenu.xib */; };
 		6F06C3CA1C8BEA57007300EE /* twitter_searchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06C3C91C8BEA57007300EE /* twitter_searchTests.swift */; };
 		6F06C3D51C8BEA57007300EE /* twitter_searchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06C3D41C8BEA57007300EE /* twitter_searchUITests.swift */; };
+		6F06C3E41C8BF8A5007300EE /* TSResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06C3E21C8BF8A5007300EE /* TSResultsViewController.swift */; };
+		6F06C3E51C8BF8A5007300EE /* TSResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F06C3E31C8BF8A5007300EE /* TSResultsViewController.xib */; };
+		6F06C3E71C8D4081007300EE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F06C3E61C8D4081007300EE /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		6F06C3D01C8BEA57007300EE /* twitter-searchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "twitter-searchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F06C3D41C8BEA57007300EE /* twitter_searchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twitter_searchUITests.swift; sourceTree = "<group>"; };
 		6F06C3D61C8BEA57007300EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F06C3E21C8BF8A5007300EE /* TSResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSResultsViewController.swift; sourceTree = "<group>"; };
+		6F06C3E31C8BF8A5007300EE /* TSResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSResultsViewController.xib; sourceTree = "<group>"; };
+		6F06C3E61C8D4081007300EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F06C3E71C8D4081007300EE /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +80,7 @@
 		6F06C3AD1C8BEA57007300EE = {
 			isa = PBXGroup;
 			children = (
+				6F06C3E61C8D4081007300EE /* WebKit.framework */,
 				6F06C3B81C8BEA57007300EE /* twitter-search */,
 				6F06C3C81C8BEA57007300EE /* twitter-searchTests */,
 				6F06C3D31C8BEA57007300EE /* twitter-searchUITests */,
@@ -97,6 +105,8 @@
 				6F06C3BB1C8BEA57007300EE /* Assets.xcassets */,
 				6F06C3BD1C8BEA57007300EE /* MainMenu.xib */,
 				6F06C3C01C8BEA57007300EE /* Info.plist */,
+				6F06C3E21C8BF8A5007300EE /* TSResultsViewController.swift */,
+				6F06C3E31C8BF8A5007300EE /* TSResultsViewController.xib */,
 			);
 			path = "twitter-search";
 			sourceTree = "<group>";
@@ -224,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F06C3BC1C8BEA57007300EE /* Assets.xcassets in Resources */,
+				6F06C3E51C8BF8A5007300EE /* TSResultsViewController.xib in Resources */,
 				6F06C3BF1C8BEA57007300EE /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F06C3E41C8BF8A5007300EE /* TSResultsViewController.swift in Sources */,
 				6F06C3BA1C8BEA57007300EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +483,7 @@
 				6F06C3DB1C8BEA57007300EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F06C3DC1C8BEA57007300EE /* Build configuration list for PBXNativeTarget "twitter-searchTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +492,7 @@
 				6F06C3DE1C8BEA57007300EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F06C3DF1C8BEA57007300EE /* Build configuration list for PBXNativeTarget "twitter-searchUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +501,7 @@
 				6F06C3E11C8BEA57007300EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
