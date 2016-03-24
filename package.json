@@ -2,7 +2,7 @@
   "name": "twitter-search",
   "version": "1.0.0",
   "dependencies": {
-    "expres": "0.0.5",
+    "express": "^4.13.4",
     "redis": "^2.5.3",
     "twit": "^2.2.3"
   }
