@@ -1,4 +1,9 @@
 {
   "name": "twitter-search",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "dependencies": {
+    "expres": "0.0.5",
+    "redis": "^2.5.3",
+    "twit": "^2.2.3"
+  }
 }
