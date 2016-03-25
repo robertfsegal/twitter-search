@@ -18,7 +18,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
-        if let button = statusItem.button {
+        if let button = statusItem.button
+        {
             button.image = NSImage(named: "SearchButtonImage")
             button.action = Selector("togglePopover:")
         }
