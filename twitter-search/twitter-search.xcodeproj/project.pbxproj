@@ -15,6 +15,8 @@
 		6F06C3E41C8BF8A5007300EE /* TSResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06C3E21C8BF8A5007300EE /* TSResultsViewController.swift */; };
 		6F06C3E51C8BF8A5007300EE /* TSResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F06C3E31C8BF8A5007300EE /* TSResultsViewController.xib */; };
 		6F06C3E71C8D4081007300EE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F06C3E61C8D4081007300EE /* WebKit.framework */; };
+		6FB627151CA4C864002CDAEE /* loader.css in Resources */ = {isa = PBXBuildFile; fileRef = 6FB627141CA4C864002CDAEE /* loader.css */; };
+		6FB627171CA4C978002CDAEE /* loader.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FB627161CA4C978002CDAEE /* loader.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		6F06C3E21C8BF8A5007300EE /* TSResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSResultsViewController.swift; sourceTree = "<group>"; };
 		6F06C3E31C8BF8A5007300EE /* TSResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSResultsViewController.xib; sourceTree = "<group>"; };
 		6F06C3E61C8D4081007300EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6FB627141CA4C864002CDAEE /* loader.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = loader.css; sourceTree = "<group>"; };
+		6FB627161CA4C978002CDAEE /* loader.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = loader.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		6F06C3B81C8BEA57007300EE /* twitter-search */ = {
 			isa = PBXGroup;
 			children = (
+				6FB627161CA4C978002CDAEE /* loader.html */,
+				6FB627141CA4C864002CDAEE /* loader.css */,
 				6F06C3B91C8BEA57007300EE /* AppDelegate.swift */,
 				6F06C3BB1C8BEA57007300EE /* Assets.xcassets */,
 				6F06C3BD1C8BEA57007300EE /* MainMenu.xib */,
@@ -233,7 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB627151CA4C864002CDAEE /* loader.css in Resources */,
 				6F06C3BC1C8BEA57007300EE /* Assets.xcassets in Resources */,
+				6FB627171CA4C978002CDAEE /* loader.html in Resources */,
 				6F06C3E51C8BF8A5007300EE /* TSResultsViewController.xib in Resources */,
 				6F06C3BF1C8BEA57007300EE /* MainMenu.xib in Resources */,
 			);
