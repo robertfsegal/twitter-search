@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    
+    NSURL        *path    = [[NSBundle mainBundle] URLForResource:@"index.html" withExtension:@"" subdirectory:@"www"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:path];
+    
+    [_webView.mainFrame loadRequest:request];
 }
 
 @end

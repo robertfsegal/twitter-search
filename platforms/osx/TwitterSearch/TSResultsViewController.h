@@ -7,7 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <WebKit/WebKit.h>
 
 @interface TSResultsViewController : NSViewController
+@property (weak) IBOutlet WebView *webView;
 
 @end
