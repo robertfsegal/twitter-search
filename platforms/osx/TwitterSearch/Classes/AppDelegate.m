@@ -19,18 +19,20 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "TSResultsViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window;
 
-static NSStatusBar *statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:-2];
-static NSPopover   *popover   = [[NSPopover alloc] init];
-
+NSButton     *button;
+NSPopover    *popover;
+NSStatusItem *statusItem;
 
 - (id)init
 {
     self = [super init];
+    
     return self;
 }
 
@@ -44,21 +46,48 @@ static NSPopover   *popover   = [[NSPopover alloc] init];
 
 - (void) applicationDidFinishLaunching:(NSNotification*)aNotification 
 {
-    if (NSButton *button = [statusItem button])
+    if (!popover)
     {
-        button.image = [[NSImage alloc] initByReferencingFile:@"StatusBarButtonImage"];
+        popover = [[NSPopover alloc] init];
+    }
+    
+    statusItem  = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    statusItem.action = @selector(togglePopover:);
+    
+    button = statusItem.button;
+    
+    if (button)
+    {
+        button.image = [NSImage imageNamed:@"youtube-search"];
         button.action = @selector(togglePopover:);
     }
 
-    popover.contentViewController
-    
-    
-//    if let button = statusItem.button {
-//        +            button.image = NSImage(named: "StatusBarButtonImage")
-//        +            button.action = Selector("togglePopover:")
-//        +        }
-    +
-    +        popover.contentViewController = TSResultsViewController(nibName: "TSResultsViewController", bundle: nil)
+    popover.contentViewController = [[TSResultsViewController alloc] initWithNibName:@"TSResultsViewController" bundle:nil];
+}
+
+-(void) showPopover:(id)sender
+{
+    if (button == statusItem.button)
+    {
+        [popover showRelativeToRect:button.bounds ofView:button preferredEdge:NSRectEdgeMinY];
+    }
+}
+
+-(void)closePopover:(id)sender
+{
+    [popover performClose:sender];
+}
+
+-(void)togglePopover:(id)sender
+{
+    if (popover.shown)
+    {
+        [self closePopover:sender];
+    }
+    else
+    {
+        [self showPopover:sender];
+    }
 }
 
 @end
